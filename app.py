@@ -93,8 +93,8 @@ credentials = service_account.Credentials.from_service_account_info(
 dir = os.getcwd()
 foldername = "Live2eat_FrontEnd"
 
-raw_data_dir = f'{dir}/drive/MyDrive/{foldername}/raw_data'
-export_path = f'{dir}/drive/MyDrive/{foldername}/data/predict_images'
+raw_data_dir = f'{dir}/drive/MyDrive/Github/{foldername}/raw_data'
+export_path = f'{dir}/drive/MyDrive/Github/{foldername}/data/predict_images'
 
 try:
     # creating a folder named data
