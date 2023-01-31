@@ -38,7 +38,7 @@ def video_uri(option, credentials):
 
 def download_video_opencv(video_uri, video_path, credentials):
 
-    last_path = os.sep.join(os.path.normpath(video_uri).split(os.sep)[-2:])
+    last_path = os.sep.join(os.path.normpath(video_uri).split(os.sep)[-1:])
     bucket = storage.Client(
         credentials=credentials).bucket('dish_videos')
     blob = bucket.blob(last_path)
