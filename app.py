@@ -111,8 +111,7 @@ except OSError:
 
 # select the video and download it
 #---------------------------------------------------------------
-# video_path = os.path.join(raw_data_dir, 'video.mp4')
-video_path = raw_data_dir
+video_path = os.path.join(raw_data_dir, 'video.mp4')
 print('Reading video from: ', video_path)
 cam = cv2.VideoCapture(video_path)
 
